@@ -14,8 +14,30 @@ On a side note, the bottom of this page has a little trading journal I keep to v
 
 ## AI projects
 
-- **NeoCloud CapEx Tracker** (2026): an always-on pipeline that pulls hyperscaler and neocloud filings from SEC EDGAR and HKEXnews, extracts AI capex and cloud revenue with LLMs, and cites every number back to the exact filing line. A human-in-the-loop review loop turns reviewer notes into rules for future extractions.
-  [Live dashboard on AWS](https://d1pdb32k3hz8st.cloudfront.net/) · [Latest workbook](https://d1pdb32k3hz8st.cloudfront.net/download/latest.xlsx) · [Code](https://github.com/KKKKKKAI/neocloud-capex-tracker)
+<!--
+  Every project follows the same structure, newest first, and every project shows a chart
+  snapshot of its output:
+
+  ### Project name (year)
+
+  One or two sentences: what it tracks and what it says about where we are in the cycle.
+
+  [Live output](https://…) · [Code](https://github.com/KKKKKKAI/…)
+
+  <a href="LIVE-OUTPUT-URL"><img alt="What the chart shows" src="CHART-URL" width="100%"></a>
+
+  CHART-URL is either a chart image the project publishes itself (it stays current), or a
+  PNG/SVG saved under assets/projects/, which is published together with this README
+  (src="assets/projects/<name>.png").
+-->
+
+### NeoCloud CapEx Tracker (2026)
+
+An always-on pipeline that pulls hyperscaler and neocloud filings from SEC EDGAR and HKEXnews, extracts AI capex and cloud revenue with LLMs, and cites every number back to the exact filing line. A human-in-the-loop review loop turns reviewer notes into rules for future extractions.
+
+[Live dashboard on AWS](https://d1pdb32k3hz8st.cloudfront.net/) · [Latest workbook](https://d1pdb32k3hz8st.cloudfront.net/download/latest.xlsx) · [Code](https://github.com/KKKKKKAI/neocloud-capex-tracker)
+
+<a href="https://d1pdb32k3hz8st.cloudfront.net/"><img alt="AI infrastructure capex by company, FY2015 to FY2026, from the NeoCloud CapEx Tracker" src="https://d1pdb32k3hz8st.cloudfront.net/charts/capex_annual.png" width="100%"></a>
 
 More projects coming soon.
 
@@ -24,14 +46,16 @@ More projects coming soon.
 Paper trading on TradingView: simulated, not real money.
 
 <!-- PORTFOLIO:START -->
-| Time-weighted return | Ending balance | Max drawdown | Sharpe ratio | Beta vs SPY |
-|---:|---:|---:|---:|---:|
-| **+26.2%** | **$126,183** | −9.8% | 1.83 | 1.71 |
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="portfolio/charts/vami-dark.svg">
   <img alt="Growth of 1,000: portfolio vs benchmarks" src="portfolio/charts/vami-light.svg" width="100%">
 </picture>
+
+<details><summary>Details: returns, risk measures and trading statistics</summary>
+
+| Time-weighted return | Ending balance | Max drawdown | Sharpe ratio | Beta vs SPY |
+|---:|---:|---:|---:|---:|
+| **+26.2%** | **$126,183** | −9.8% | 1.83 | 1.71 |
 
 **Risk measures** · 12 May 2026 – 30 Sep 2026 · daily, time-weighted · benchmarks include dividends · risk-free rate is the 13-week T-bill
 
@@ -93,4 +117,6 @@ Paper trading on TradingView: simulated, not real money.
 | 77 | 65% | 4.53 | +8.2% (+$775) | −4.0% (−$317) | +$392 |
 
 <sub>Built by a plain-Python pipeline (no AI) from my TradingView paper-trading exports. Positions are marked at daily closes from Yahoo Finance and converted to USD. From 12 Aug 2026 the NAV is replayed fill by fill and ties to TradingView's balance history. Before that, TradingView only exports merged trades, so the daily path is estimated: each closed trade is replayed at its average entry and exit prices, and positions still open on 12 Aug 2026 are held at that day's size. The return since inception is exact either way.</sub>
+
+</details>
 <!-- PORTFOLIO:END -->
