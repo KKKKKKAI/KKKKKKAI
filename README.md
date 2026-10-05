@@ -1,31 +1,27 @@
 # Kai Ye
 
-Investment banking analyst in London · BEng Computer Science, Imperial College London (2024) · I build AI tools for investing
+Finance and computer science · London · building AI projects that track where we are in the cycle
 
-<!-- SUMMARY:START -->
-**Paper long/short portfolio start date:** 13 May 2026 (TradingView, US$100k)  
-**Since inception:** +26.2% vs SPY +3.8%, QQQ +4.8%, IWM −1.2% (as of 30 Sep 2026)
-<!-- SUMMARY:END -->
+[About me](#about-me) · [AI projects](#ai-projects) · [Trading journal](#trading-journal)
 
-*The portfolio section updates automatically every time I add a TradingView export.*
+## About me
 
-[Notes](#notes--1-oct-2026) · [AI projects](#ai-projects) · [Paper portfolio](#paper-portfolio) · [Ideas and pitches](#ideas-and-pitches)
+Hi, I'm Kai. My background is in finance and computer science (BEng Computer Science, Imperial College London), and I spend a lot of my time talking to great people in all kinds of roles across tech.
 
-## Notes – 1 Oct 2026
+I build AI projects to test my understanding of the market. They break down the underlying datasets and track them on an ongoing basis, so that anyone can see where we are in the cycle.
 
-I graduated from Imperial College London in 2024 with a BEng in Computer Science. My thesis was on centrality-preserved graph sparsification for graph neural networks, applied to social link prediction. At Imperial I was sector head for Industrials and TMT at QT Capital, where I led a team of student analysts pitching stocks to 500+ members, and Vice President of the Investment Society, where I headed Algothon, London's largest algorithmic trading hackathon with 600+ participants.
-
-I first worked in investment banking as a summer intern in 2023. In June 2024 I joined the Infrastructure & Power team at a bulge-bracket bank in London, first off-cycle and then full-time from January 2025. In July 2025 I moved to the TMT team, where I work on large M&A processes in digital infrastructure. I was also an early contributor to the bank's AI lab, where I built a news-monitoring agent for deal teams and LLM-based M&A target mapping.
-
-Outside work I build AI tools for investing, mostly pipelines that turn primary filings into structured, auditable data. In May 2026 I started a long/short paper portfolio on TradingView, mostly in AI infrastructure, semis, power and software. The track record below is paper trading, not real money, and it updates automatically from my TradingView exports.
+On a side note, the bottom of this page has a little trading journal I keep to validate my understanding.
 
 ## AI projects
 
 - **NeoCloud CapEx Tracker** (2026): an always-on pipeline that pulls hyperscaler and neocloud filings from SEC EDGAR and HKEXnews, extracts AI capex and cloud revenue with LLMs, and cites every number back to the exact filing line. A human-in-the-loop review loop turns reviewer notes into rules for future extractions.
   [Live dashboard on AWS](https://d1pdb32k3hz8st.cloudfront.net/) · [Latest workbook](https://d1pdb32k3hz8st.cloudfront.net/download/latest.xlsx) · [Code](https://github.com/KKKKKKAI/neocloud-capex-tracker)
-- **Portfolio tracker** (2026): a plain-Python pipeline (no AI) that turns my TradingView paper-trading exports into the risk report below.
 
-## Paper portfolio
+More projects coming soon.
+
+## Trading journal
+
+Paper trading on TradingView: simulated, not real money.
 
 <!-- PORTFOLIO:START -->
 | Time-weighted return | Ending balance | Max drawdown | Sharpe ratio | Beta vs SPY |
@@ -92,31 +88,9 @@ Outside work I build AI tools for investing, mostly pipelines that turn primary 
 
 **Trading statistics** · closed trades
 
-| Trades | Win rate | Profit factor | Average win | Average loss | Expectancy | Average hold |
-|---:|---:|---:|---:|---:|---:|---:|
-| 77 | 65% | 4.53 | +8.2% (+$775) | −4.0% (−$317) | +$392 | 11.9 days |
-
-Best trade: **IG:NASDAQ** long, +$6,748 (+1.3%). Worst trade: **GLW** long, −$1,511 (−29.4%).
-
-**Open positions** · 30 Sep 2026 close
-
-| Position | Side | Quantity | Average cost | Close | Unrealized | Return | Weight |
-|---|---|---:|---:|---:|---:|---:|---:|
-| GOOG | Long | 68 | 347.17 | 340.74 | −$437 | −1.9% | 18.4% |
-| INTC | Long | 123.96 | 101.98 | 120.23 | +$2,262 | +17.9% | 11.8% |
-| NOW | Long | 80.52 | 134.20 | 134.01 | −$15 | −0.1% | 8.6% |
-| MSFT | Long | 20 | 494.45 | 512.90 | +$369 | +3.7% | 8.1% |
-| CEG | Long | 23.91 | 257.33 | 254.02 | −$79 | −1.3% | 4.8% |
-| AVGO | Long | 17 | 349.59 | 351.19 | +$27 | +0.5% | 4.7% |
-| LSE:RR. | Long | 300 | 1,442.60 GBX | 1,461.60 GBX | +$75 | +1.3% | 4.6% |
-| GEV | Long | 6 | 909.93 | 950.49 | +$243 | +4.5% | 4.5% |
-| AMZN | Long | 20 | 256.77 | 249.15 | −$152 | −3.0% | 3.9% |
-| CRM | Long | 20.72 | 244.09 | 229.57 | −$301 | −5.9% | 3.8% |
+| Trades | Win rate | Profit factor | Average win | Average loss | Expectancy |
+|---:|---:|---:|---:|---:|---:|
+| 77 | 65% | 4.53 | +8.2% (+$775) | −4.0% (−$317) | +$392 |
 
 <sub>Built by a plain-Python pipeline (no AI) from my TradingView paper-trading exports. Positions are marked at daily closes from Yahoo Finance and converted to USD. From 12 Aug 2026 the NAV is replayed fill by fill and ties to TradingView's balance history. Before that, TradingView only exports merged trades, so the daily path is estimated: each closed trade is replayed at its average entry and exit prices, and positions still open on 12 Aug 2026 are held at that day's size. The return since inception is exact either way.</sub>
 <!-- PORTFOLIO:END -->
-
-## Ideas and pitches
-
-- PH long (Oct 2022, QT Capital): pitched at ~$260 with a $340 NTM target price; traded at ~$390 by Oct 2023
-- IFX long (Jul 2022, QT Capital): pitched at ~€24 with a €30 NTM target price; traded at ~€35 by Jul 2023
