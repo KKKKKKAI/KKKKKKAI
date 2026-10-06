@@ -31,6 +31,17 @@ On a side note, the bottom of this page has a little trading journal I keep to v
   (src="assets/projects/<name>.png").
 -->
 
+### Learn the Bottleneck with Me (2026)
+
+A map of about 120 companies that follows the AI capex dollar from the buyers of compute through servers, chips, memory, optics and power, down to fab tools and materials. I model the companies one at a time, and a calculator links public unit-economics theses, so anyone can sense-check where the bottleneck sits in the cycle.
+
+[Live site on AWS](https://d1utfi290p6efw.cloudfront.net/) · [Calculator](https://d1utfi290p6efw.cloudfront.net/calculator.html)
+
+<a href="https://d1utfi290p6efw.cloudfront.net/"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://d1utfi290p6efw.cloudfront.net/charts/map-dark.png">
+  <img alt="The AI value-chain map: about 120 companies by tier, from the sources of money down to materials, colored by coverage status" src="https://d1utfi290p6efw.cloudfront.net/charts/map-light.png" width="100%">
+</picture></a>
+
 ### NeoCloud CapEx Tracker (2026)
 
 An always-on pipeline that pulls hyperscaler and neocloud filings from SEC EDGAR and HKEXnews, extracts AI capex and cloud revenue with LLMs, and cites every number back to the exact filing line. A human-in-the-loop review loop turns reviewer notes into rules for future extractions.
